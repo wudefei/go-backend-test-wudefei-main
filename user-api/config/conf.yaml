@@ -1,0 +1,20 @@
+env: MOCK
+app_name: user-api
+mode: debug
+db_log_enable: true
+gin_host: :8080
+
+db:
+  dp_user:
+    driver: mysql
+    uri: 
+    maxOpenConn: 100
+    maxIdleConn: 20
+    maxLifetime: 1800
+redis: 
+  default: 
+    uri: 
+    auth: 
+    db: 1
+    maxIdle: 10
+    maxActive: 100
